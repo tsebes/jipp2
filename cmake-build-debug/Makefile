@@ -106,17 +106,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named simpleCalc
+# Target rules for targets named class
 
 # Build rule for target.
-simpleCalc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) simpleCalc
-.PHONY : simpleCalc
+class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) class
+.PHONY : class
 
 # fast build rule for target.
-simpleCalc\fast:
-	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make /nologo -$(MAKEFLAGS) simpleCalc\CMakeFiles\simpleCalc.dir\build
-.PHONY : simpleCalc\fast
+class\fast:
+	$(MAKE) $(MAKESILENT) -f Class\CMakeFiles\class.dir\build.make /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\build
+.PHONY : class\fast
 
 # Help Target
 help:
@@ -126,7 +126,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... simpleCalc
+	@echo ... class
 .PHONY : help
 
 

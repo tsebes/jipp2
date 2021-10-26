@@ -52,57 +52,57 @@ CMAKE_BINARY_DIR = C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: simpleCalc\all
+all: Class\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: simpleCalc\preinstall
+preinstall: Class\preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: simpleCalc\clean
+clean: Class\clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory simpleCalc
+# Directory level rules for directory Class
 
 # Recursive "all" directory target.
-simpleCalc\all: simpleCalc\CMakeFiles\simpleCalc.dir\all
-.PHONY : simpleCalc\all
+Class\all: Class\CMakeFiles\class.dir\all
+.PHONY : Class\all
 
 # Recursive "preinstall" directory target.
-simpleCalc\preinstall:
-.PHONY : simpleCalc\preinstall
+Class\preinstall:
+.PHONY : Class\preinstall
 
 # Recursive "clean" directory target.
-simpleCalc\clean: simpleCalc\CMakeFiles\simpleCalc.dir\clean
-.PHONY : simpleCalc\clean
+Class\clean: Class\CMakeFiles\class.dir\clean
+.PHONY : Class\clean
 
 #=============================================================================
-# Target rules for target simpleCalc/CMakeFiles/simpleCalc.dir
+# Target rules for target Class/CMakeFiles/class.dir
 
 # All Build rule for target.
-simpleCalc\CMakeFiles\simpleCalc.dir\all:
-	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make /nologo -$(MAKEFLAGS) simpleCalc\CMakeFiles\simpleCalc.dir\depend
-	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make /nologo -$(MAKEFLAGS) simpleCalc\CMakeFiles\simpleCalc.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target simpleCalc"
-.PHONY : simpleCalc\CMakeFiles\simpleCalc.dir\all
+Class\CMakeFiles\class.dir\all:
+	$(MAKE) $(MAKESILENT) -f Class\CMakeFiles\class.dir\build.make /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\depend
+	$(MAKE) $(MAKESILENT) -f Class\CMakeFiles\class.dir\build.make /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target class"
+.PHONY : Class\CMakeFiles\class.dir\all
 
 # Build rule for subdir invocation for target.
-simpleCalc\CMakeFiles\simpleCalc.dir\rule: cmake_check_build_system
+Class\CMakeFiles\class.dir\rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) simpleCalc\CMakeFiles\simpleCalc.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles 0
-.PHONY : simpleCalc\CMakeFiles\simpleCalc.dir\rule
+.PHONY : Class\CMakeFiles\class.dir\rule
 
 # Convenience name for target.
-simpleCalc: simpleCalc\CMakeFiles\simpleCalc.dir\rule
-.PHONY : simpleCalc
+class: Class\CMakeFiles\class.dir\rule
+.PHONY : class
 
 # clean rule for target.
-simpleCalc\CMakeFiles\simpleCalc.dir\clean:
-	$(MAKE) $(MAKESILENT) -f simpleCalc\CMakeFiles\simpleCalc.dir\build.make /nologo -$(MAKEFLAGS) simpleCalc\CMakeFiles\simpleCalc.dir\clean
-.PHONY : simpleCalc\CMakeFiles\simpleCalc.dir\clean
+Class\CMakeFiles\class.dir\clean:
+	$(MAKE) $(MAKESILENT) -f Class\CMakeFiles\class.dir\build.make /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\clean
+.PHONY : Class\CMakeFiles\class.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

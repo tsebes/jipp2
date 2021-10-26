@@ -208,10 +208,22 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Class_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/Class
+
+//Value Computed by CMake
+Class_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/Class
+
+//Value Computed by CMake
 Project_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2
+
+//Value Computed by CMake
+firstlib_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/firstlib
+
+//Value Computed by CMake
+firstlib_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/firstlib
 
 //Value Computed by CMake
 simpleCalc_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/simpleCalc
