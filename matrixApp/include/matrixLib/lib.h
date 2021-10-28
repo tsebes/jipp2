@@ -33,6 +33,16 @@ int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn);
 
 void powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
 
+int determinantMatrix(int **tab1,int iwierszy,int ikolumn);
+
+bool matrixIsDiagonal(int **tab1,int iwierszy,int ikolumn);
+
+void swap(int *wartosca,int *wartoscb);
+
+void sortRow(int *tab1,int ikolumn);
+
+void sortRowsInMatrix(int ** tab1,int iwierszy, int ikolumn);
+
 
 
 

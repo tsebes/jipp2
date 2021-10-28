@@ -125,9 +125,79 @@ int main(int argc, char* argv[]){
             }
         }else if(action=="determinantMatrix"){
             cout << "wybrano akcje determinantMatrix" << endl;
+            int iwierszy, wynik;
+            cout << "podaj ilosc wierszy" << endl;
+            cin >> iwierszy;
 
+            int **taba=newtab(iwierszy,iwierszy);
+            filltab(taba,iwierszy,iwierszy);
+            wynik=determinantMatrix(taba,iwierszy,iwierszy);
+            cout << "wyznacznik tej macierzy wynosi:" << wynik << endl;
+            deletetab(taba,iwierszy,iwierszy);
 
+        }else if(action=="matrixIsDiagonal"){
+            cout << "wybrano akcje matrixIsDiagonal" << endl;
+            int iwierszy,ikolumn;
+            bool wynik;
+            cout << "podaj ilosc wierszy" << endl;
+            cin >> iwierszy;
+            cout << "podaj ilosc kolumn" << endl;
+            cin >> ikolumn;
 
+            int **taba=newtab(iwierszy,ikolumn);
+            filltab(taba,iwierszy,ikolumn);
+            wynik = matrixIsDiagonal(taba, iwierszy, ikolumn);
+            if(wynik==true){
+                cout << "macierz jest diagonalna"<< endl;
+            }else{
+                cout << "macierz nie jest diagonalna"<< endl;
+            }
+            deletetab(taba,iwierszy,ikolumn);
+        }else if(action=="swap"){
+            int wartosca,wartoscb;
+            cout << "podaj wartosc a" << endl;
+            cin >> wartosca;
+            cout << "podaj wartosc b" << endl;
+            cin >> wartoscb;
+
+            cout << "a wynosi: " << wartosca << endl << "b wynosi: " << wartoscb << endl;
+            swap(&wartosca,&wartoscb);
+            cout << "po zamianie" << endl << "a wynosi: " << wartosca << endl << "b wynosi: " << wartoscb << endl;
+
+        }else if(action=="sortRow"){
+            int ikolumn;
+            cout << "podaj ilosc kolumn" << endl;
+            cin >> ikolumn;
+            int * taba = new int[ikolumn];
+            cout << "podaj wartosci do posortowania:" << endl;
+            for(int i=0;i<ikolumn;i++){
+                cin >> taba[i];
+            }
+            sortRow(taba,ikolumn);
+            cout << "posortowane wartosci:" << endl;
+            for(int i=0;i<ikolumn;i++){
+                cout << taba[i] << "  ";
+            }
+            delete [] taba;
+
+        }else if(action=="sortRowsInMatrix"){
+            cout << "wybrano akcje sortRowsInMatrix" << endl;
+            int ikolumn,iwierszy;
+            cout << "podaj ilosc wierszy" << endl;
+            cin >> iwierszy;
+            cout << "podaj ilosc kolumn" << endl;
+            cin >> ikolumn;
+
+            int **taba=newtab(iwierszy,iwierszy);
+            filltab(taba,iwierszy,iwierszy);
+            sortRowsInMatrix(taba,iwierszy,ikolumn);
+            cout << "po posortowaniu ";
+            showtab(taba,iwierszy,ikolumn);
+            deletetab(taba,iwierszy,ikolumn);
+
+        }else{
+            cout << "podana wartosc nie ma przypisanej do niej funkcji" << endl;
+            help(0);
         }
     }
     else{
@@ -135,6 +205,5 @@ int main(int argc, char* argv[]){
         help(0);
     }
 
-    system ("pause");
 }
 
