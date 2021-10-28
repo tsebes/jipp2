@@ -117,15 +117,16 @@ int main(int argc, char* argv[]){
 
                 int **taba=newtab(iwierszy,iwierszy);
                 filltab(taba,iwierszy,iwierszy);
-                int **wynik=newtab(iwierszy,iwierszy);
-                wynik = powerMatrix(taba,iwierszy,iwierszy,potega);
-                showtab(wynik, iwierszy, iwierszy);
+                powerMatrix(taba,iwierszy,iwierszy,potega);
+                showtab(taba, iwierszy, iwierszy);
                 deletetab(taba,iwierszy,iwierszy);
-                deletetab(wynik,iwierszy,iwierszy);
                 }
 
             }
         }else if(action=="determinantMatrix"){
+            cout << "wybrano akcje determinantMatrix" << endl;
+
+
 
         }
     }

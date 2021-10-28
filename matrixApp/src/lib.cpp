@@ -132,8 +132,9 @@ int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn){
     return tab2;
 }
 
-int **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+void **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
     int **tab2=newtab(iwierszy,iwierszy);
+    int wartosc;
     if(potega==0){
         for (int i = 0; i<iwierszy; i++){
             for(int j = 0; j<iwierszy; j++){
@@ -152,8 +153,15 @@ int **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
             }
         }
         for (int unsigned i = 0; i < potega-1; i++) {
-            tab2 = multiplyMatrix(tab1, tab2, iwierszy, iwierszy, iwierszy);
+            for (int i = 0; i<iwierszy; i++){
+                for(int j = 0; j<iwierszy; j++){
+                    wartosc=0;
+                    for(int k = 0; k < iwierszy; k++){
+                        wartosc=wartosc+tab1[i][k]*tab2[k][j];
+                    }
+                    tab1[i][j]=wartosc;
+                }
+            }
         }
     }
-    return tab2;
 }

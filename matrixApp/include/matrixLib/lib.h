@@ -31,7 +31,7 @@ void multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar);
 
 int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn);
 
-int **powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
+void **powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
 
 
 
