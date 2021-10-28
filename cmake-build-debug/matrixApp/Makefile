@@ -151,65 +151,65 @@ matrixLib\fast:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
 .PHONY : matrixLib\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src\lib.obj: src\lib.cpp.obj
+.PHONY : src\lib.obj
 
 # target to build an object file
-main.cpp.obj:
+src\lib.cpp.obj:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.obj
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : main.cpp.obj
+.PHONY : src\lib.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src\lib.i: src\lib.cpp.i
+.PHONY : src\lib.i
 
 # target to preprocess a source file
-main.cpp.i:
+src\lib.cpp.i:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.i
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : main.cpp.i
+.PHONY : src\lib.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src\lib.s: src\lib.cpp.s
+.PHONY : src\lib.s
 
 # target to generate assembly for a file
-main.cpp.s:
+src\lib.cpp.s:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.s
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : main.cpp.s
+.PHONY : src\lib.cpp.s
 
-matrixLib\lib.obj: matrixLib\lib.cpp.obj
-.PHONY : matrixLib\lib.obj
+src\main.obj: src\main.cpp.obj
+.PHONY : src\main.obj
 
 # target to build an object file
-matrixLib\lib.cpp.obj:
+src\main.cpp.obj:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.obj
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : matrixLib\lib.cpp.obj
+.PHONY : src\main.cpp.obj
 
-matrixLib\lib.i: matrixLib\lib.cpp.i
-.PHONY : matrixLib\lib.i
+src\main.i: src\main.cpp.i
+.PHONY : src\main.i
 
 # target to preprocess a source file
-matrixLib\lib.cpp.i:
+src\main.cpp.i:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.i
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.i
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : matrixLib\lib.cpp.i
+.PHONY : src\main.cpp.i
 
-matrixLib\lib.s: matrixLib\lib.cpp.s
-.PHONY : matrixLib\lib.s
+src\main.s: src\main.cpp.s
+.PHONY : src\main.s
 
 # target to generate assembly for a file
-matrixLib\lib.cpp.s:
+src\main.cpp.s:
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.s
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.s
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-.PHONY : matrixLib\lib.cpp.s
+.PHONY : src\main.cpp.s
 
 # Help Target
 help:
@@ -221,12 +221,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... matrixApp
 	@echo ... matrixLib
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... matrixLib/lib.obj
-	@echo ... matrixLib/lib.i
-	@echo ... matrixLib/lib.s
+	@echo ... src/lib.obj
+	@echo ... src/lib.i
+	@echo ... src/lib.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

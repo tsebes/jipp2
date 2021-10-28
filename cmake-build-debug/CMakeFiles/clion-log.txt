@@ -1,22 +1,8 @@
 "D:\politechnika\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\sebiz\CLionProjects\jipp2
-CMake Warning (dev) in CMakeLists.txt:
-  No project() command is present.  The top-level CMakeLists.txt file must
-  contain a literal, direct call to the project() command.  Add a line of
-  code such as
-
-    project(ProjectName)
-
-  near the top of the file, but after cmake_minimum_required().
-
-  CMake is pretending there is a "project(Project)" command on the first
-  line.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Error at matrixApp/CMakeLists.txt:9 (add_library):
-  add_library cannot create target "matrixApp" because another target with
-  the same name already exists.  The existing target is an executable created
-  in source directory "C:/Users/sebiz/CLionProjects/jipp2/matrixApp".  See
-  documentation for policy CMP0002 for more details.
+CMake Error at matrixApp/CMakeLists.txt:7 (add_library):
+  The target name "include/matrixLib" is reserved or not valid for certain
+  CMake features, such as generator expressions, and may result in undefined
+  behavior.
 
 
 -- Configuring incomplete, errors occurred!

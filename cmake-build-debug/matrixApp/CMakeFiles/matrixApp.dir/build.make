@@ -55,39 +55,39 @@ include matrixApp\CMakeFiles\matrixApp.dir\progress.make
 # Include the compile flags for this target's objects.
 include matrixApp\CMakeFiles\matrixApp.dir\flags.make
 
-matrixApp\CMakeFiles\matrixApp.dir\main.cpp.obj: matrixApp\CMakeFiles\matrixApp.dir\flags.make
-matrixApp\CMakeFiles\matrixApp.dir\main.cpp.obj: ..\matrixApp\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object matrixApp/CMakeFiles/matrixApp.dir/main.cpp.obj"
+matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.obj: matrixApp\CMakeFiles\matrixApp.dir\flags.make
+matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.obj: ..\matrixApp\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object matrixApp/CMakeFiles/matrixApp.dir/src/main.cpp.obj"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\matrixApp.dir\main.cpp.obj /FdCMakeFiles\matrixApp.dir\ /FS -c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\matrixApp.dir\src\main.cpp.obj /FdCMakeFiles\matrixApp.dir\ /FS -c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\main.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
-matrixApp\CMakeFiles\matrixApp.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixApp.dir/main.cpp.i"
+matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixApp.dir/src/main.cpp.i"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\matrixApp.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebiz\CLionProjects\jipp2\matrixApp\main.cpp
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\matrixApp.dir\src\main.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\main.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
-matrixApp\CMakeFiles\matrixApp.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixApp.dir/main.cpp.s"
+matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixApp.dir/src/main.cpp.s"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\matrixApp.dir\main.cpp.s /c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\matrixApp.dir\src\main.cpp.s /c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\main.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
 # Object files for target matrixApp
 matrixApp_OBJECTS = \
-"CMakeFiles\matrixApp.dir\main.cpp.obj"
+"CMakeFiles\matrixApp.dir\src\main.cpp.obj"
 
 # External object files for target matrixApp
 matrixApp_EXTERNAL_OBJECTS =
 
-matrixApp\matrixApp.exe: matrixApp\CMakeFiles\matrixApp.dir\main.cpp.obj
+matrixApp\matrixApp.exe: matrixApp\CMakeFiles\matrixApp.dir\src\main.cpp.obj
 matrixApp\matrixApp.exe: matrixApp\CMakeFiles\matrixApp.dir\build.make
 matrixApp\matrixApp.exe: matrixApp\CMakeFiles\matrixApp.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable matrixApp.exe"

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/sebiz/CLionProjects/jipp2/matrixApp/matrixLib/lib.cpp" "C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib/lib.cpp.obj"
+  "C:/Users/sebiz/CLionProjects/jipp2/matrixApp/src/lib.cpp" "C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

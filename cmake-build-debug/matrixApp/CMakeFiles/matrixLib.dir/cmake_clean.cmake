@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matrixLib.dir/matrixLib/lib.cpp.obj"
+  "CMakeFiles/matrixLib.dir/src/lib.cpp.obj"
   "matrixLib.lib"
   "matrixLib.pdb"
 )

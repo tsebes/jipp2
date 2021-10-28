@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/sebiz/CLionProjects/jipp2/matrixApp/include/matrixLib/lib.h
+../../src/lib.cpp
+C:/Users/sebiz/CLionProjects/jipp2/matrixApp/src/lib.cpp
+
+C:/Users/sebiz/CLionProjects/jipp2/matrixApp/src/lib.cpp
+iostream
+-
+
+C:/Users/sebiz/CLionProjects/jipp2/matrixApp/src/main.cpp
+iostream
+-
+string
+-
+../include/matrixLib/lib.h
+C:/Users/sebiz/CLionProjects/jipp2/matrixApp/include/matrixLib/lib.h
+

@@ -55,39 +55,39 @@ include matrixApp\CMakeFiles\matrixLib.dir\progress.make
 # Include the compile flags for this target's objects.
 include matrixApp\CMakeFiles\matrixLib.dir\flags.make
 
-matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj: matrixApp\CMakeFiles\matrixLib.dir\flags.make
-matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj: ..\matrixApp\matrixLib\lib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object matrixApp/CMakeFiles/matrixLib.dir/matrixLib/lib.cpp.obj"
+matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.obj: matrixApp\CMakeFiles\matrixLib.dir\flags.make
+matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.obj: ..\matrixApp\src\lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj /FdCMakeFiles\matrixLib.dir\matrixLib.pdb /FS -c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\matrixLib\lib.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\matrixLib.dir\src\lib.cpp.obj /FdCMakeFiles\matrixLib.dir\matrixLib.pdb /FS -c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\lib.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
-matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixLib.dir/matrixLib/lib.cpp.i"
+matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrixLib.dir/src/lib.cpp.i"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebiz\CLionProjects\jipp2\matrixApp\matrixLib\lib.cpp
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe > CMakeFiles\matrixLib.dir\src\lib.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\lib.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
-matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixLib.dir/matrixLib/lib.cpp.s"
+matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrixLib.dir/src/lib.cpp.s"
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\matrixLib.dir\matrixLib\lib.cpp.s /c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\matrixLib\lib.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\matrixLib.dir\src\lib.cpp.s /c C:\Users\sebiz\CLionProjects\jipp2\matrixApp\src\lib.cpp
 <<
 	cd C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug
 
 # Object files for target matrixLib
 matrixLib_OBJECTS = \
-"CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj"
+"CMakeFiles\matrixLib.dir\src\lib.cpp.obj"
 
 # External object files for target matrixLib
 matrixLib_EXTERNAL_OBJECTS =
 
-matrixApp\matrixLib.lib: matrixApp\CMakeFiles\matrixLib.dir\matrixLib\lib.cpp.obj
+matrixApp\matrixLib.lib: matrixApp\CMakeFiles\matrixLib.dir\src\lib.cpp.obj
 matrixApp\matrixLib.lib: matrixApp\CMakeFiles\matrixLib.dir\build.make
 matrixApp\matrixLib.lib: matrixApp\CMakeFiles\matrixLib.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library matrixLib.lib"
