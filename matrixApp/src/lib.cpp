@@ -145,15 +145,13 @@ int **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
                 }
             }
         }
-    }else if(potega==1){
-        return tab1;
     }else {
         for (int i = 0; i<iwierszy; i++){
             for(int j = 0; j<iwierszy; j++){
                 tab2[i][j]=tab1[i][j];
             }
         }
-        for (int unsigned i = 0; i < potega; i++) {
+        for (int unsigned i = 0; i < potega-1; i++) {
             tab2 = multiplyMatrix(tab1, tab2, iwierszy, iwierszy, iwierszy);
         }
     }
