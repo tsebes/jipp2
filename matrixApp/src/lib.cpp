@@ -132,8 +132,12 @@ int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn){
     return tab2;
 }
 
-void **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+void powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+    if(iwierszy!=ikolumn){
+        cout << "potegowac mozna jedynie macierze kwadratowe" << endl;
+    }else{
     int **tab2=newtab(iwierszy,iwierszy);
+    int **tab3=newtab(iwierszy,iwierszy);
     int wartosc;
     if(potega==0){
         for (int i = 0; i<iwierszy; i++){
@@ -150,6 +154,7 @@ void **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
         for (int i = 0; i<iwierszy; i++){
             for(int j = 0; j<iwierszy; j++){
                 tab2[i][j]=tab1[i][j];
+                tab3[i][j]=tab1[i][j];
             }
         }
         for (int unsigned i = 0; i < potega-1; i++) {
@@ -159,9 +164,17 @@ void **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
                     for(int k = 0; k < iwierszy; k++){
                         wartosc=wartosc+tab1[i][k]*tab2[k][j];
                     }
-                    tab1[i][j]=wartosc;
+                    tab3[i][j]=wartosc;
                 }
             }
         }
+        for (int i = 0; i<iwierszy; i++){
+            for(int j = 0; j<iwierszy; j++){
+                tab1[i][j]=tab3[i][j];
+            }
+        }
+        deletetab(tab2,iwierszy,iwierszy);
+        deletetab(tab3,iwierszy,iwierszy);
+    }
     }
 }
