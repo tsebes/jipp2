@@ -32,12 +32,30 @@ int main(int argc, char* argv[]){
             deletetab(taba,ikolumn,iwierszy);
             deletetab(tabb,ikolumn,iwierszy);
             deletetab(wynik,ikolumn,iwierszy);
+        }else if(action=="subtract"){
+            int ikolumn,iwierszy;
+            cout << "podaj ilosc wierszy" << endl;
+            cin >> iwierszy;
+            cout << "podaj ilosc kolumn" << endl;
+            cin >> ikolumn;
+
+            int **taba = new int * [ikolumn];
+            int **tabb = new int * [ikolumn];
+            int **wynik =new int * [ikolumn];
+            newtab(taba,ikolumn,iwierszy);
+            filltab(taba,ikolumn,iwierszy);
+            newtab(tabb,ikolumn,iwierszy);
+            filltab(tabb,ikolumn,iwierszy);
+            newtab(wynik,ikolumn,iwierszy);
+
+            showtab(wynik,ikolumn,iwierszy);
+            deletetab(taba,ikolumn,iwierszy);
+            deletetab(tabb,ikolumn,iwierszy);
+            deletetab(wynik,ikolumn,iwierszy);
+       }else if(){
 
 
         }
-       // else if{
-
-       // }
 
     }
     else{

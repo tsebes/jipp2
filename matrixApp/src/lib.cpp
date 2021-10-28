@@ -73,6 +73,12 @@ void showtab(int ** tab, int ikolumn,int iwierszy){
         cout << endl;
     }
 }
+void deletetab(int ** tab, int ikolumn, int iwierszy){
+    for (int i = 0; i<ikolumn; i++) {
+        delete [] tab[i];
+    }
+    delete [] tab;
+}
 
 void addtab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy){
     for (int i = 0; i<iwierszy; i++){
@@ -82,9 +88,11 @@ void addtab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy){
     }
 }
 
-void deletetab(int ** tab, int ikolumn, int iwierszy){
-    for (int i = 0; i<ikolumn; i++) {
-        delete [] tab[i];
+
+void subtracttab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy){
+    for (int i = 0; i<iwierszy; i++){
+        for(int j = 0; j<ikolumn; j++){
+            tab3[i][j]=tab1[i][j]-tab2[i][j];
+        }
     }
-    delete [] tab;
 }

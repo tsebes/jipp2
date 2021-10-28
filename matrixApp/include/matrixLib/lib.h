@@ -19,9 +19,15 @@ void filltab(int ** tab, int ikolumn,int iwierszy);
 
 void showtab(int ** tab, int ikolumn, int iwierszy);
 
-void addtab(int ** tab1, int ** tab2, int ikolumn, int iwierszy);
-
 void deletetab(int ** tab, int ikolumn, int iwierszy);
+
+void addtab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy);
+
+void subtracttab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy);
+
+
+
+
 
 
 #endif //JIPP2_LIB_H
