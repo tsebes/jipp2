@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/sebiz/CLionProjects/jipp2/Class/src/Firstclass.h
+iostream
+-
+
+C:/Users/sebiz/CLionProjects/jipp2/Class/src/main.cpp
+iostream
+-
+string
+-
+Firstclass.h
+C:/Users/sebiz/CLionProjects/jipp2/Class/src/Firstclass.h
+
