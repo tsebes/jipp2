@@ -48,51 +48,107 @@ void help(int function){
 
 }
 
-void newtab(int ** tab, int ikolumn,int iwierszy){
-    for (int i = 0; i<iwierszy; i++){
-        tab[i] = new int [iwierszy];
+int **newtab( int iwierszy, int ikolumn){
+    int **tab = new int*[iwierszy];
+    for (int i = 0; i<iwierszy; ++i){
+        tab[i] = new int [ikolumn];
     }
+    return tab;
 }
 
-void filltab(int ** tab, int ikolumn,int iwierszy){
+void filltab(int ** tab, int iwierszy, int ikolumn){
     cout << "podawaj wartosci wierszami" << endl;
-    for (int i = 0; i<iwierszy; i++){
-        for(int j = 0; j<ikolumn; j++){
+    for (int i = 0; i<iwierszy; ++i){
+        for(int j = 0; j<ikolumn; ++j){
             cin >>tab[i][j];
         }
     }
 }
 
 
-void showtab(int ** tab, int ikolumn,int iwierszy){
+void showtab(int ** tab, int iwierszy, int ikolumn){
     cout << "macierz ma nastepujace wartosci:" << endl;
-    for (int i = 0; i<iwierszy; i++){
-        for(int j = 0; j<ikolumn; j++){
+    for (int i = 0; i<iwierszy; ++i){
+        for(int j = 0; j<ikolumn; ++j){
             cout << tab[i][j] << "   ";
         }
         cout << endl;
     }
 }
-void deletetab(int ** tab, int ikolumn, int iwierszy){
-    for (int i = 0; i<ikolumn; i++) {
+void deletetab(int ** tab, int iwierszy, int ikolumn){
+    for (int i = 0; i<iwierszy; ++i) {
         delete [] tab[i];
     }
     delete [] tab;
 }
 
-void addtab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy){
+void addMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-          tab3[i][j]=tab2[i][j]+tab1[i][j];
+          tab1[i][j]=tab2[i][j]+tab1[i][j];
         }
     }
 }
 
 
-void subtracttab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy){
+void subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-            tab3[i][j]=tab1[i][j]-tab2[i][j];
+            tab1[i][j]=tab1[i][j]-tab2[i][j];
         }
     }
+}
+
+int **multiplyMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn, int ikolumn2){
+    int **tab3=newtab(iwierszy,ikolumn2);
+    int wartosc;
+    for (int i = 0; i<iwierszy; i++){
+        for(int j = 0; j<ikolumn2; j++){
+        wartosc=0;
+        for(int k = 0; k < ikolumn; k++){
+            wartosc=wartosc+tab1[i][k]*tab2[k][j];
+        }
+        tab3[i][j]=wartosc;
+        }
+    }
+    return tab3;
+}
+
+void multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar){
+    for (int i = 0; i<iwierszy; i++){
+        for(int j = 0; j<ikolumn; j++){
+            tab1[i][j]=tab1[i][j]*skalar;
+        }
+    }
+}
+
+int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn){
+    int **tab2=newtab(ikolumn,iwierszy);
+    for (int i = 0; i<iwierszy; i++){
+        for(int j = 0; j<ikolumn; j++){
+            tab2[j][i]=tab1[i][j];
+        }
+    }
+    return tab2;
+}
+
+int **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+    int **tab2=newtab(iwierszy,iwierszy);
+    if(potega==0){
+        for (int i = 0; i<iwierszy; i++){
+            for(int j = 0; j<iwierszy; j++){
+                if(i==j){
+                    tab2[i][j]=1;
+                }
+                else{
+                    tab2[i][j]=0;
+                }
+            }
+        }
+    }else {
+        for (int unsigned i = 0; i < potega; i++) {
+            tab2 = multiplyMatrix(tab1, tab2, iwierszy, iwierszy, iwierszy);
+        }
+    }
+    return tab2;
 }

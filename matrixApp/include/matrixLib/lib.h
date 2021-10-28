@@ -13,17 +13,25 @@
  */
 void help(int function);
 
-void newtab(int ** tab, int ikolumn, int iwierszy);
+int **newtab( int iwierszy, int ikolumn);
 
-void filltab(int ** tab, int ikolumn,int iwierszy);
+void filltab(int ** tab, int iwierszy, int ikolumn);
 
-void showtab(int ** tab, int ikolumn, int iwierszy);
+void showtab(int ** tab, int iwierszy, int ikolumn);
 
-void deletetab(int ** tab, int ikolumn, int iwierszy);
+void deletetab(int ** tab, int iwierszy, int ikolumn);
 
-void addtab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy);
+void addMatrix(int ** tab1, int ** tab2,  int iwierszy, int ikolumn);
 
-void subtracttab(int ** tab1, int ** tab2,int ** tab3, int ikolumn, int iwierszy);
+void subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn);
+
+int **multiplyMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn, int ikolumn2);
+
+void multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar);
+
+int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn);
+
+int **powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
 
 
 
