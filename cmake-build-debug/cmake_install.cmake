@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/Class/cmake_install.cmake")
+  include("C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

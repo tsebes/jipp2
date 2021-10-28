@@ -18,8 +18,11 @@ struct samochod{
 
 
 int main(){
-    samochod car[4];
-    for (int i = 0; i < 4; i++)
+    int iloscsamochodow;
+    cout << "podaj ile aut chcesz dodac(nie zostanie dodane wiecej niz 10)" << endl;
+    cin >> iloscsamochodow;
+    samochod car[10];
+    for (int i = 0; i < iloscsamochodow; i++)
     {   cout << "Dodaje " << i+1 << " auto:" << endl;
         cout << "Podaj marke" << endl;
         cin >> car[i].marka;
@@ -32,7 +35,7 @@ int main(){
     }
     cout << "Marka\tModel\trok produkcji\tkolor" << endl;
     cout << "---------------------------------------------------" << endl;
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < iloscsamochodow; i++) {
         cout << car[i].marka << "\t";
         cout << car[i].model << "\t";
         cout << car[i].rok_produkcji << "\t\t";

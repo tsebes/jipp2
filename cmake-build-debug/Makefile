@@ -106,17 +106,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named class
+# Target rules for targets named matrixApp
 
 # Build rule for target.
-class: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) class
-.PHONY : class
+matrixApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixApp
+.PHONY : matrixApp
 
 # fast build rule for target.
-class\fast:
-	$(MAKE) $(MAKESILENT) -f Class\CMakeFiles\class.dir\build.make /nologo -$(MAKEFLAGS) Class\CMakeFiles\class.dir\build
-.PHONY : class\fast
+matrixApp\fast:
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixApp.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixApp.dir\build
+.PHONY : matrixApp\fast
+
+#=============================================================================
+# Target rules for targets named matrixLib
+
+# Build rule for target.
+matrixLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) matrixLib
+.PHONY : matrixLib
+
+# fast build rule for target.
+matrixLib\fast:
+	$(MAKE) $(MAKESILENT) -f matrixApp\CMakeFiles\matrixLib.dir\build.make /nologo -$(MAKEFLAGS) matrixApp\CMakeFiles\matrixLib.dir\build
+.PHONY : matrixLib\fast
 
 # Help Target
 help:
@@ -126,7 +139,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... class
+	@echo ... matrixApp
+	@echo ... matrixLib
 .PHONY : help
 
 

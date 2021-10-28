@@ -226,6 +226,12 @@ firstlib_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/
 firstlib_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/firstlib
 
 //Value Computed by CMake
+matrixApp_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp
+
+//Value Computed by CMake
+matrixApp_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/matrixApp
+
+//Value Computed by CMake
 simpleCalc_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/simpleCalc
 
 //Value Computed by CMake

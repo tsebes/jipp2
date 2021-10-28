@@ -12,6 +12,12 @@ CMake Warning (dev) in CMakeLists.txt:
   line.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug
+CMake Error at matrixApp/CMakeLists.txt:9 (add_library):
+  add_library cannot create target "matrixApp" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory "C:/Users/sebiz/CLionProjects/jipp2/matrixApp".  See
+  documentation for policy CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/CMakeFiles/CMakeOutput.log".
