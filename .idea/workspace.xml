@@ -15,13 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3bdcff1f-6c2c-402c-8af7-1fcbc89ff7b3" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixApp/include/matrixLib/lib.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/include/matrixLib/lib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrixApp/src/lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/src/lib.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrixApp/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/src/main.cpp" afterDir="false" />
     </list>
@@ -132,7 +128,7 @@
       <workItem from="1635439708026" duration="380000" />
       <workItem from="1635440116632" duration="5070000" />
       <workItem from="1635500340287" duration="1224000" />
-      <workItem from="1635502838348" duration="4149000" />
+      <workItem from="1635502838348" duration="5275000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1634589450298</created>
@@ -246,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635502813627</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1">
+      <created>1635507031542</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635507031542</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

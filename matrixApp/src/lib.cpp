@@ -48,6 +48,25 @@ void help(int function){
 
 }
 
+int typdanych(){
+    int wybor;
+    cout << "wpisz 1 jesli chcesz wybrac typ int" << endl << "wpisz 2 jesli chcesz wybrac typ double" << endl;
+    do {
+        cin >> wybor;
+        while(cin.fail())
+        {   cout << "Wprowadziles bledne dane!" << endl;
+            cin.clear();
+            cin.ignore(1000,'\n');
+            cout << "Wprowadz dane ponownie:" << endl;
+            cin >> wybor;
+        }
+        if(wybor!=1&&wybor!=2){
+            cout << "podano zla wartosc, wybierz znowu" << endl;
+        }
+    }while(wybor!=1&&wybor!=2);
+    return wybor;
+}
+
 int **newtab( int iwierszy, int ikolumn){
     int **tab = new int*[iwierszy];
     for (int i = 0; i<iwierszy; ++i){
