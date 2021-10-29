@@ -231,19 +231,19 @@ void powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
             }
         }
         for (int unsigned l = 0; l < potega-1; l++) {
-            for (int i = 0; i<iwierszy; i++){
-                for(int j = 0; j<iwierszy; j++){
-                    wartosc=0;
-                    for(int k = 0; k < iwierszy; k++){
-                        wartosc=wartosc+tab1[i][k]*tab2[k][j];
+            for (int i = 0; i < iwierszy; i++) {
+                for (int j = 0; j < iwierszy; j++) {
+                    wartosc = 0;
+                    for (int k = 0; k < iwierszy; k++) {
+                        wartosc = wartosc + tab1[i][k] * tab2[k][j];
                     }
-                    tab3[i][j]=wartosc;
+                    tab3[i][j] = wartosc;
                 }
             }
-        }
-        for (int i = 0; i<iwierszy; i++){
-            for(int j = 0; j<iwierszy; j++){
-                tab1[i][j]=tab3[i][j];
+            for (int i = 0; i < iwierszy; i++) {
+                for (int j = 0; j < iwierszy; j++) {
+                    tab1[i][j] = tab3[i][j];
+                }
             }
         }
         deletetab(tab2,iwierszy,iwierszy);
@@ -462,19 +462,19 @@ void powerMatrix(double ** tab1,int iwierszy, int ikolumn, int unsigned potega){
                 }
             }
             for (int unsigned l = 0; l < potega-1; l++) {
-                for (int i = 0; i<iwierszy; i++){
-                    for(int j = 0; j<iwierszy; j++){
-                        wartosc=0;
-                        for(int k = 0; k < iwierszy; k++){
-                            wartosc=wartosc+tab1[i][k]*tab2[k][j];
+                for (int i = 0; i < iwierszy; i++) {
+                    for (int j = 0; j < iwierszy; j++) {
+                        wartosc = 0;
+                        for (int k = 0; k < iwierszy; k++) {
+                            wartosc = wartosc + tab1[i][k] * tab2[k][j];
                         }
-                        tab3[i][j]=wartosc;
+                        tab3[i][j] = wartosc;
                     }
                 }
-            }
-            for (int i = 0; i<iwierszy; i++){
-                for(int j = 0; j<iwierszy; j++){
-                    tab1[i][j]=tab3[i][j];
+                for (int i = 0; i < iwierszy; i++) {
+                    for (int j = 0; j < iwierszy; j++) {
+                        tab1[i][j] = tab3[i][j];
+                    }
                 }
             }
             deletetab(tab2,iwierszy,iwierszy);
