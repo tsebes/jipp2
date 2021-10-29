@@ -8,41 +8,88 @@
 using namespace std;
 
 void help(int function){
-    switch(function){
-        case 0:
-            help(1);
-            help(2);
-            help(3);
-            help(4);
-            help(5);
-            help(6);
-            help(7);
-            help(8);
-            help(9);
-            help(10);
-            help(11);
+            if(function==0) {
+                cout << "aby uruchomic funckje nalezy wprowadzic jej nazwe jako argument funkcji" << endl;
+                cout << "Mozliwe funkcje:" << endl;
+                cout << "1 - addMatrix" << endl;
+                cout << "2 - subtractMatrix" << endl;
+                cout << "3 - multiplyMatrix" << endl;
+                cout << "4 - multiplyByScalar" << endl;
+                cout << "5 - transpozeMatrix" << endl;
+                cout << "6 - powerMatrix" << endl;
+                cout << "7 - determinantMatrix" << endl;
+                cout << "8 - matrixIsDiagonal" << endl;
+                cout << "9 - swap" << endl;
+                cout << "10 - sortRow" << endl;
+                cout << "11 - sortRowsInMatrix" << endl << endl;
+
+
+                cout << "wpisz numer funkcji aby dowiedziec sie o niej wiecej, wpisz 0 by wyjsc, wpisz 12 aby dowiedziec sie wiecej o wpisywaniu danych do macierzy" << endl;
+                do {
+                    cin >> function;
+                    while(cin.fail())
+                    {   cout << "Wprowadziles bledne dane!" << endl;
+                        cin.clear();
+                        cin.ignore(1000,'\n');
+                        cout << "Wprowadz dane ponownie:" << endl;
+                        cin >> function;
+                    }
+                    if(function<0||function>12){
+                        cout << "podano zla wartosc, wybierz znowu" << endl;
+                    }
+                }while(function<0||function>12);
+            }
+            switch(function){
+                case 0:
             break;
-        case 1:
+                case 1:
+                    cout << "funkcja addMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona dwie macierze a nastepnie je dodaje" << endl;
             break;
-        case 2:
+                case 2:
+                    cout << "funkcja subtractMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona dwie macierze a nastepnie je odejmuje" << endl;
             break;
-        case 3:
+                case 3:
+                    cout << "funkcja multiplyMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona dwie macierze a nastepnie je mnozy" << endl;
             break;
-        case 4:
+                case 4:
+                    cout << "funkcja multiplyByScalar potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona jedna macierz, prosi o podanie skalaru a nastepnie mnozy macierz przez skalar" << endl;
             break;
-        case 5:
+                case 5:
+                    cout << "funkcja tranpozeMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona macierz a nastepnie pokazuje nam macierz transponowana do stworzonej macierzy" << endl;
             break;
-        case 6:
+                case 6:
+                    cout << "funkcja powerMatrix potrzebuje do wywolania dwoch argumentow - jej nazwy oraz potegi do ktorej chemy podniesc macierz" << endl;
+                    cout << "potega musi byc nieujemna" << endl;
+                    cout << "tworzy ona macierz a nastepnie podnosi ja do podanej potegi" << endl;
             break;
-        case 7:
+                case 7:
+                    cout << "funkcja determinantMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona macierz a nastepnie oblicza jej wyznacznik" << endl;
             break;
-        case 8:
+                case 8:
+                    cout << "funkcja matrixIsDiagonal potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona macierz a nastepnie sprawdza czy jest diagonalna" << endl;
             break;
-        case 9:
+                case 9:
+                    cout << "funkcja swap potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "zamienia ona dwie wartosci ze soba" << endl;
             break;
-        case 10:
+                case 10:
+                    cout << "funkcja sortRow potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona tablice jednowymiarowa a nastepnie sortuje jej wartosci rosnaco" << endl;
             break;
-        case 11:
+                case 11:
+                    cout << "funkcja sortRowsInMatrix potrzebuje do wywolania jedynie jednego argumentu - jej nazwy" << endl;
+                    cout << "tworzy ona macierz a nastepnie sortuje wszystkie jej wiersze rosnaco" << endl;
+            break;
+                case 12:
+                    cout << "Dane do macierzy sa wczytywane po wczytaniu jej rozmiarow, za pomoca funkcji filltab" << endl;
+                    cout << "Wczytuje ona dane po kolei wierszami, w przypadku podania blednego typu funkcja prosi o ponowne podanie wartosci" << endl;
             break;
     }
 
@@ -339,7 +386,7 @@ void deletetab(double ** tab, int iwierszy, int ikolumn){
     delete [] tab;
 }
 
-void addMatrix(double ** tab1, int ** tab2, int iwierszy, int ikolumn){
+void addMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
             tab1[i][j]=tab2[i][j]+tab1[i][j];
@@ -348,7 +395,7 @@ void addMatrix(double ** tab1, int ** tab2, int iwierszy, int ikolumn){
 }
 
 
-void subtractMatrix(double ** tab1, int ** tab2, int iwierszy, int ikolumn){
+void subtractMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
             tab1[i][j]=tab1[i][j]-tab2[i][j];

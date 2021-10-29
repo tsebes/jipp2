@@ -170,39 +170,38 @@ int main(int argc, char* argv[]){
 
         }else if(action=="powerMatrix") {
 
-            if(argc<2){
-                cout << "brak potegi w argumentach funkcji main" <<endl;
-                help(6);
-            }
-            else{
+            if(argc>2){
 
                 cout << "wybrano akcje powerMatrix" << endl;
                 if(stoi(argv[2])<0) {
                     cout << "podaj potege dodatnia" << endl;
                 }
                 else{
-                int iwierszy;
-                int unsigned potega;
-                cout << "podaj ilosc wierszy" << endl;
-                cin >> iwierszy;
-                dobradana(&iwierszy);
-                potega = stoi(argv[2]);
+                    int iwierszy;
+                    int unsigned potega;
+                    cout << "podaj ilosc wierszy" << endl;
+                    cin >> iwierszy;
+                    dobradana(&iwierszy);
+                    potega = stoi(argv[2]);
 
-                if(typdanych()==1){
-                    int **taba = newtab(iwierszy,iwierszy);
-                    filltab(taba,iwierszy,iwierszy);
-                    powerMatrix(taba,iwierszy,iwierszy,potega);
-                    showtab(taba, iwierszy, iwierszy);
-                    deletetab(taba,iwierszy,iwierszy);
-                }else{
-                    double **taba = newtabdouble(iwierszy,iwierszy);
-                    filltab(taba,iwierszy,iwierszy);
-                    powerMatrix(taba,iwierszy,iwierszy,potega);
-                    showtab(taba, iwierszy, iwierszy);
-                    deletetab(taba,iwierszy,iwierszy);
+                    if(typdanych()==1){
+                        int **taba = newtab(iwierszy,iwierszy);
+                        filltab(taba,iwierszy,iwierszy);
+                        powerMatrix(taba,iwierszy,iwierszy,potega);
+                        showtab(taba, iwierszy, iwierszy);
+                        deletetab(taba,iwierszy,iwierszy);
+                    }else{
+                        double **taba = newtabdouble(iwierszy,iwierszy);
+                        filltab(taba,iwierszy,iwierszy);
+                        powerMatrix(taba,iwierszy,iwierszy,potega);
+                        showtab(taba, iwierszy, iwierszy);
+                        deletetab(taba,iwierszy,iwierszy);
                     }
                 }
-
+            }
+            else{
+                cout << "brak potegi w argumentach funkcji main" <<endl;
+                help(6);
             }
         }else if(action=="determinantMatrix"){
 
@@ -356,6 +355,8 @@ int main(int argc, char* argv[]){
                 deletetab(taba,iwierszy,ikolumn);
             }
 
+        }else if(action=="help"){
+            help(0);
         }else{
             cout << "podana wartosc nie ma przypisanej do niej funkcji" << endl;
             help(0);
