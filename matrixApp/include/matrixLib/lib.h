@@ -43,6 +43,8 @@ void sortRow(int *tab1,int ikolumn);
 
 void sortRowsInMatrix(int ** tab1,int iwierszy, int ikolumn);
 
+int dobradana(int *zmienna);
+
 
 
 

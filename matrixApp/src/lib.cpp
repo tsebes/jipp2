@@ -61,6 +61,7 @@ void filltab(int ** tab, int iwierszy, int ikolumn){
     for (int i = 0; i<iwierszy; ++i){
         for(int j = 0; j<ikolumn; ++j){
             cin >>tab[i][j];
+            dobradana(tab[i][j]);
         }
     }
 }
@@ -258,4 +259,15 @@ void sortRowsInMatrix(int ** tab1,int iwierszy, int ikolumn){
     for(int i=0;i<iwierszy;i++){
         sortRow(tab1[i],ikolumn);
     }
+}
+
+int dobradana(int *zmienna){
+    while(cin.fail())
+    {   cout << "Wprowadziles bledne dane" << endl;
+        cin.clear();
+        cin.ignore(1000,'\n');
+        cout << "Wprowadz dane ponownie:" << endl;
+        cin >> *zmienna;
+    }
+    return *zmienna;
 }
