@@ -17,8 +17,12 @@ int main(int argc, char* argv[]){
             int ikolumn,iwierszy;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
+
+
 
             int **taba = newtab(iwierszy,ikolumn);
             int **tabb = newtab(iwierszy,ikolumn);
@@ -34,8 +38,10 @@ int main(int argc, char* argv[]){
             int ikolumn,iwierszy;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
 
             int **taba = newtab(iwierszy,ikolumn);
             int **tabb = newtab(iwierszy,ikolumn);
@@ -51,10 +57,13 @@ int main(int argc, char* argv[]){
             int ikolumn,iwierszy,ikolumn2;
             cout << "podaj ilosc wierszy pierwszej macierzy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn pierwszej macierzy" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
             cout << "podaj ilosc kolumn drugiej macierzy" << endl;
             cin >> ikolumn2;
+            dobradana(&ikolumn2);
 
             int **taba=newtab(iwierszy,ikolumn);
             int **tabb=newtab(ikolumn,ikolumn2);
@@ -72,10 +81,13 @@ int main(int argc, char* argv[]){
             int ikolumn, iwierszy, skalar;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
             cout << "podaj skalar" <<endl;
             cin >>skalar;
+            dobradana(&skalar);
 
             int **taba=newtab(iwierszy,ikolumn);
             filltab(taba,iwierszy,ikolumn);
@@ -88,8 +100,10 @@ int main(int argc, char* argv[]){
             int ikolumn,iwierszy;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
 
             int **taba=newtab(iwierszy,ikolumn);
             filltab(taba,iwierszy,ikolumn);
@@ -113,6 +127,7 @@ int main(int argc, char* argv[]){
                 int unsigned potega;
                 cout << "podaj ilosc wierszy" << endl;
                 cin >> iwierszy;
+                dobradana(&iwierszy);
                 potega = stoi(argv[2]);
 
                 int **taba=newtab(iwierszy,iwierszy);
@@ -128,6 +143,7 @@ int main(int argc, char* argv[]){
             int iwierszy, wynik;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
 
             int **taba=newtab(iwierszy,iwierszy);
             filltab(taba,iwierszy,iwierszy);
@@ -141,8 +157,10 @@ int main(int argc, char* argv[]){
             bool wynik;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
 
             int **taba=newtab(iwierszy,ikolumn);
             filltab(taba,iwierszy,ikolumn);
@@ -157,8 +175,10 @@ int main(int argc, char* argv[]){
             int wartosca,wartoscb;
             cout << "podaj wartosc a" << endl;
             cin >> wartosca;
+            dobradana(&wartosca);
             cout << "podaj wartosc b" << endl;
             cin >> wartoscb;
+            dobradana(&wartoscb);
 
             cout << "a wynosi: " << wartosca << endl << "b wynosi: " << wartoscb << endl;
             swap(&wartosca,&wartoscb);
@@ -168,6 +188,7 @@ int main(int argc, char* argv[]){
             int ikolumn;
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
             int * taba = new int[ikolumn];
             cout << "podaj wartosci do posortowania:" << endl;
             for(int i=0;i<ikolumn;i++){
@@ -185,8 +206,10 @@ int main(int argc, char* argv[]){
             int ikolumn,iwierszy;
             cout << "podaj ilosc wierszy" << endl;
             cin >> iwierszy;
+            dobradana(&iwierszy);
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
+            dobradana(&ikolumn);
 
             int **taba=newtab(iwierszy,iwierszy);
             filltab(taba,iwierszy,iwierszy);

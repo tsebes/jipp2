@@ -17,14 +17,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrixApp/include/matrixLib/lib.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/include/matrixLib/lib.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrixApp/src/lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/src/lib.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrixApp/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +86,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.matrixApp">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="matrixApp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="sortRowsInMatrix" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixApp" TARGET_NAME="matrixApp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="matrixApp" RUN_TARGET_NAME="matrixApp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -105,6 +99,11 @@
     <configuration name="simpleCalc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixApp" TARGET_NAME="simpleCalc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="matrixApp" RUN_TARGET_NAME="simpleCalc">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -132,7 +131,8 @@
       <workItem from="1635438961779" duration="719000" />
       <workItem from="1635439708026" duration="380000" />
       <workItem from="1635440116632" duration="5070000" />
-      <workItem from="1635500340287" duration="1193000" />
+      <workItem from="1635500340287" duration="1224000" />
+      <workItem from="1635502838348" duration="4149000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1634589450298</created>
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635454586561</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1">
+      <created>1635502813627</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635502813627</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
