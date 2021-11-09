@@ -134,7 +134,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=matrixApp
+CMAKE_PROJECT_NAME:STATIC=lab5
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x86/rc.exe
@@ -224,6 +224,24 @@ firstlib_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/
 
 //Value Computed by CMake
 firstlib_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/firstlib
+
+//Value Computed by CMake
+lab5_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug
+
+//Value Computed by CMake
+lab5_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2
+
+//Value Computed by CMake
+lab_5_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug
+
+//Value Computed by CMake
+lab_5_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2
+
+//Value Computed by CMake
+lab_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug
+
+//Value Computed by CMake
+lab_SOURCE_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2
 
 //Value Computed by CMake
 matrixApp_BINARY_DIR:STATIC=C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug

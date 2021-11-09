@@ -2,9 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="matrixApp" targetName="matrixApp" />
-      <config projectName="matrixApp" targetName="matrixLib" />
-      <config projectName="matrixApp" targetName="allocation_basics" />
+      <config projectName="lab5" targetName="lab5" />
+      <config projectName="lab5" targetName="allocation_basics" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -14,17 +13,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bdcff1f-6c2c-402c-8af7-1fcbc89ff7b3" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/lab5/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/include/Point.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/Point.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab5/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/src/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/matrixLib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixApp/src/lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrixApp/src/lib.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir/src/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir/src/lib.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixApp.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrixApp/matrixLib.lib" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,31 +101,36 @@
       <recent name="C:\Users\sebiz\CLionProjects\jipp2\firstlib\Library\src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.matrixApp">
-    <configuration name="matrixApp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="powerMatrix 3" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixApp" TARGET_NAME="matrixApp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="matrixApp" RUN_TARGET_NAME="matrixApp">
+  <component name="RunManager" selected="CMake Application.lab5">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="matrixLib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixApp" TARGET_NAME="matrixLib" CONFIG_NAME="Debug">
+    <configuration name="lab5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab5" TARGET_NAME="lab5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab5" RUN_TARGET_NAME="lab5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="simpleCalc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixApp" TARGET_NAME="simpleCalc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="matrixApp" RUN_TARGET_NAME="simpleCalc">
+    <configuration name="matrixApp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="determinantMatrix" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab5" TARGET_NAME="matrixApp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab5" RUN_TARGET_NAME="matrixApp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="simpleCalc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab5" TARGET_NAME="simpleCalc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab5" RUN_TARGET_NAME="simpleCalc">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="CMake Application.simpleCalc" />
       <item itemvalue="CMake Application.matrixApp" />
-      <item itemvalue="CMake Application.matrixLib" />
+      <item itemvalue="CMake Application.lab5" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -141,7 +155,8 @@
       <workItem from="1635500340287" duration="1224000" />
       <workItem from="1635502838348" duration="5570000" />
       <workItem from="1635508486270" duration="2851000" />
-      <workItem from="1635533528809" duration="1023000" />
+      <workItem from="1635533528809" duration="1505000" />
+      <workItem from="1636444983994" duration="5329000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1634589450298</created>
@@ -283,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635511154787</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="1">
+      <created>1635534569713</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1635534569713</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
