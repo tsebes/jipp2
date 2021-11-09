@@ -69,13 +69,6 @@ Pojazd::Pojazd(string numerrejestracyjny,string nazwa, int iloscmiejsc, string *
     *miejsce = "Puste";
 }
 
-Pojazd::Pojazd(Pojaz &Pojazd){
-    numerrejestracyjny = Pojazd.numerrejestracyjny;
-    nazwa = Pojazd.nazwa;
-    *iloscmiejsc = *point.iloscmiejsc;
-    marka = Pojazd.marka;
-}
-
 void Pojazd::printData() const {
     cout << "Pojazd: " << nazwa << " numer rejestracyjny:" << numerrejestracyjny << ", ilosc miejsc = " << *iloscmiejsc << endl;
     for (int i=0; i < *iloscmiejsc; i++){

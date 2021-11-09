@@ -94,8 +94,6 @@ public:
 
     Pojazd(string numerrejestracyjny,string nazwa, int iloscmiejsc, string *miejsce, string marka);
 
-    Point(Pojazd &Pojazd);
-
     void printData() const;
 
     void setplace(int numermiejsca, string nowadana);
