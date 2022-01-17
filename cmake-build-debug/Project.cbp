@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\matrixApp\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lab10\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug"/>
@@ -37,13 +37,14 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="matrixApp">
-				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/matrixApp.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp"/>
+			<Target title="lab10">
+				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/lab10/lab10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/lab10"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/sebiz/CLionProjects/jipp2/lab10/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
@@ -53,19 +54,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 matrixApp"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 lab10"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="matrixApp/fast">
-				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/matrixApp.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp"/>
+			<Target title="lab10/fast">
+				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/lab10/lab10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/lab10"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/sebiz/CLionProjects/jipp2/lab10/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
@@ -75,71 +77,21 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 matrixApp/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="matrixLib">
-				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/matrixLib.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 matrixLib"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="matrixLib/fast">
-				<Option output="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/matrixLib.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 matrixLib/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\matrixApp\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 lab10/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\sebiz\CLionProjects\jipp2\cmake-build-debug\lab10\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/matrixApp/main.cpp">
-			<Option target="matrixApp"/>
-		</Unit>
-		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/matrixApp/matrixLib/lib.cpp">
-			<Option target="matrixLib"/>
-		</Unit>
-		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/matrixApp/matrixLib/lib.h">
-			<Option target="matrixLib"/>
+		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/lab10/src/main.cpp">
+			<Option target="lab10"/>
 		</Unit>
 		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/matrixApp/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\matrixApp\"/>
+		<Unit filename="C:/Users/sebiz/CLionProjects/jipp2/lab10/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab10\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

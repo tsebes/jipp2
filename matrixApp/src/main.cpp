@@ -26,21 +26,25 @@ int main(int argc, char* argv[]){
             if(typdanych()==1){
                 int **taba = newtab(iwierszy,ikolumn);
                 int **tabb = newtab(iwierszy,ikolumn);
+                int **wynik = newtab(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                addMatrix(taba,tabb,iwierszy,ikolumn);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = addMatrix(taba,tabb,iwierszy,ikolumn);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }else{
                 double **taba = newtabdouble(iwierszy,ikolumn);
                 double **tabb = newtabdouble(iwierszy,ikolumn);
+                double **wynik = newtabdouble(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                addMatrix(taba,tabb,iwierszy,ikolumn);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = addMatrix(taba,tabb,iwierszy,ikolumn);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }
 
         }else if(action=="subtractMatrix"){
@@ -57,21 +61,25 @@ int main(int argc, char* argv[]){
             if(typdanych()==1){
                 int **taba = newtab(iwierszy,ikolumn);
                 int **tabb = newtab(iwierszy,ikolumn);
+                int **wynik = newtab(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                subtractMatrix(taba,tabb,ikolumn,iwierszy);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = subtractMatrix(taba,tabb,ikolumn,iwierszy);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }else{
                 double **taba = newtabdouble(iwierszy,ikolumn);
                 double **tabb = newtabdouble(iwierszy,ikolumn);
+                double **wynik = newtabdouble(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                subtractMatrix(taba,tabb,ikolumn,iwierszy);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = subtractMatrix(taba,tabb,ikolumn,iwierszy);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }
 
        }else if(action=="multiplyMatrix"){
@@ -94,7 +102,7 @@ int main(int argc, char* argv[]){
                 int **wynik = newtab(iwierszy,ikolumn2);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,ikolumn,ikolumn2);
-                wynik=multiplyMatrix(taba,tabb,iwierszy,ikolumn,ikolumn2);
+                wynik = multiplyMatrix(taba,tabb,iwierszy,ikolumn,ikolumn2);
                 showtab(wynik,iwierszy,ikolumn2);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,ikolumn,ikolumn2);
@@ -105,7 +113,7 @@ int main(int argc, char* argv[]){
                 double **wynik = newtabdouble(iwierszy,ikolumn2);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,ikolumn,ikolumn2);
-                wynik=multiplyMatrix(taba,tabb,iwierszy,ikolumn,ikolumn2);
+                wynik = multiplyMatrix(taba,tabb,iwierszy,ikolumn,ikolumn2);
                 showtab(wynik,iwierszy,ikolumn2);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,ikolumn,ikolumn2);
@@ -128,16 +136,20 @@ int main(int argc, char* argv[]){
 
             if(typdanych()==1){
                 int **taba = newtab(iwierszy,ikolumn);
+                int **wynik = newtab(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
-                multiplyByScalar(taba,iwierszy,ikolumn,skalar);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = multiplyByScalar(taba,iwierszy,ikolumn,skalar);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }else{
                 double **taba = newtabdouble(iwierszy,ikolumn);
+                double **wynik = newtabdouble(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
-                multiplyByScalar(taba,iwierszy,ikolumn,skalar);
-                showtab(taba,iwierszy,ikolumn);
+                wynik = multiplyByScalar(taba,iwierszy,ikolumn,skalar);
+                showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
+                deletetab(wynik,iwierszy,ikolumn);
             }
 
        }else if(action=="transpozeMatrix") {
@@ -186,16 +198,20 @@ int main(int argc, char* argv[]){
 
                     if(typdanych()==1){
                         int **taba = newtab(iwierszy,iwierszy);
+                        int **wynik = newtab(iwierszy,iwierszy);
                         filltab(taba,iwierszy,iwierszy);
-                        powerMatrix(taba,iwierszy,iwierszy,potega);
-                        showtab(taba, iwierszy, iwierszy);
+                        wynik = powerMatrix(taba,iwierszy,iwierszy,potega);
+                        showtab(wynik, iwierszy, iwierszy);
                         deletetab(taba,iwierszy,iwierszy);
+                        deletetab(wynik,iwierszy,iwierszy);
                     }else{
                         double **taba = newtabdouble(iwierszy,iwierszy);
+                        double **wynik = newtabdouble(iwierszy,iwierszy);
                         filltab(taba,iwierszy,iwierszy);
-                        powerMatrix(taba,iwierszy,iwierszy,potega);
-                        showtab(taba, iwierszy, iwierszy);
+                        wynik = powerMatrix(taba,iwierszy,iwierszy,potega);
+                        showtab(wynik, iwierszy, iwierszy);
                         deletetab(taba,iwierszy,iwierszy);
+                        deletetab(wynik,iwierszy,iwierszy);
                     }
                 }
             }
@@ -215,14 +231,14 @@ int main(int argc, char* argv[]){
                 int wynik;
                 int **taba = newtab(iwierszy,iwierszy);
                 filltab(taba,iwierszy,iwierszy);
-                wynik=determinantMatrix(taba,iwierszy,iwierszy);
+                wynik = determinantMatrix(taba,iwierszy,iwierszy);
                 cout << "wyznacznik tej macierzy wynosi:" << wynik << endl;
                 deletetab(taba,iwierszy,iwierszy);
             }else{
                 double wynik;
                 double **taba = newtabdouble(iwierszy,iwierszy);
                 filltab(taba,iwierszy,iwierszy);
-                wynik=determinantMatrix(taba,iwierszy,iwierszy);
+                wynik = determinantMatrix(taba,iwierszy,iwierszy);
                 cout << "wyznacznik tej macierzy wynosi:" << wynik << endl;
                 deletetab(taba,iwierszy,iwierszy);
             }
@@ -245,7 +261,7 @@ int main(int argc, char* argv[]){
                 int **taba = newtab(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 wynik = matrixIsDiagonal(taba, iwierszy, ikolumn);
-                if(wynik==true){
+                if(wynik == true){
                     cout << "macierz jest diagonalna"<< endl;
                 }else{
                     cout << "macierz nie jest diagonalna"<< endl;
@@ -255,7 +271,7 @@ int main(int argc, char* argv[]){
                 double **taba = newtabdouble(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 wynik = matrixIsDiagonal(taba, iwierszy, ikolumn);
-                if(wynik==true){
+                if(wynik == true){
                     cout << "macierz jest diagonalna"<< endl;
                 }else{
                     cout << "macierz nie jest diagonalna"<< endl;
@@ -265,9 +281,9 @@ int main(int argc, char* argv[]){
 
 
 
-        }else if(action=="swap"){
+        }else if(action == "swap"){
 
-            if(typdanych()==1){
+            if(typdanych() == 1){
                 int wartosca,wartoscb;
                 cout << "podaj wartosc a" << endl;
                 cin >> wartosca;
@@ -295,17 +311,17 @@ int main(int argc, char* argv[]){
 
             }
 
-        }else if(action=="sortRow"){
+        }else if(action == "sortRow"){
 
             int ikolumn;
             cout << "podaj ilosc kolumn" << endl;
             cin >> ikolumn;
             dobradana(&ikolumn);
 
-            if(typdanych()==1){
+            if(typdanych() == 1){
                 int * taba = new int[ikolumn];
                 cout << "podaj wartosci do posortowania:" << endl;
-                for(int i=0;i<ikolumn;i++){
+                for(int i = 0; i < ikolumn;i++){
                     cin >> taba[i];
                 }
                 sortRow(taba,ikolumn);

@@ -1,7 +1,6 @@
 //
-// Created by sebiz on 28.10.2021.
+// Created by sebiz on 28.10.2021
 //
-
 
 #include <iostream>
 
@@ -155,21 +154,25 @@ void deletetab(int ** tab, int iwierszy, int ikolumn){
     delete [] tab;
 }
 
-void addMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
+int **addMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
+    int **tab3=newtab(iwierszy,ikolumn);
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-          tab1[i][j]=tab2[i][j]+tab1[i][j];
+          tab3[i][j]=tab2[i][j]+tab1[i][j];
         }
     }
+    return tab3;
 }
 
 
-void subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
+int **subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn){
+    int **tab3=newtab(iwierszy,ikolumn);
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-            tab1[i][j]=tab1[i][j]-tab2[i][j];
+            tab3[i][j]=tab1[i][j]-tab2[i][j];
         }
     }
+    return tab3;
 }
 
 int **multiplyMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn, int ikolumn2){
@@ -187,12 +190,14 @@ int **multiplyMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn, int ik
     return tab3;
 }
 
-void multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar){
-    for (int i = 0; i<iwierszy; i++){
-        for(int j = 0; j<ikolumn; j++){
-            tab1[i][j]=tab1[i][j]*skalar;
+int ** multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar){
+    int **tab2=newtab(iwierszy,ikolumn);
+    for (int i = 0; i < iwierszy; i++){
+        for(int j = 0; j < ikolumn; j++){
+            tab2[i][j]=tab1[i][j]*skalar;
         }
     }
+    return tab2;
 }
 
 int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn){
@@ -205,51 +210,48 @@ int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn){
     return tab2;
 }
 
-void powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+int **powerMatrix(int ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+    int **tab2 = newtab(iwierszy, iwierszy);
+    int **tab3 = newtab(iwierszy, iwierszy);
     if(iwierszy!=ikolumn){
         cout << "potegowac mozna jedynie macierze kwadratowe" << endl;
-    }else{
-    int **tab2=newtab(iwierszy,iwierszy);
-    int **tab3=newtab(iwierszy,iwierszy);
-    int wartosc;
-    if(potega==0){
-        for (int i = 0; i<iwierszy; i++){
-            for(int j = 0; j<iwierszy; j++){
-                if(i==j){
-                    tab1[i][j]=1;
-                }
-                else{
-                    tab1[i][j]=0;
-                }
-            }
-        }
+        deletetab(tab2, iwierszy, iwierszy);
+        deletetab(tab3, iwierszy, iwierszy);
+        return tab1;
     }else {
-        for (int i = 0; i<iwierszy; i++){
-            for(int j = 0; j<iwierszy; j++){
-                tab2[i][j]=tab1[i][j];
-                tab3[i][j]=tab1[i][j];
-            }
-        }
-        for (int unsigned l = 0; l < potega-1; l++) {
+        int wartosc;
+        if (potega == 0) {
             for (int i = 0; i < iwierszy; i++) {
                 for (int j = 0; j < iwierszy; j++) {
-                    wartosc = 0;
-                    for (int k = 0; k < iwierszy; k++) {
-                        wartosc = wartosc + tab1[i][k] * tab2[k][j];
+                    if (i == j) {
+                        tab3[i][j] = 1;
+                    } else {
+                        tab3[i][j] = 0;
                     }
-                    tab3[i][j] = wartosc;
                 }
             }
+        } else {
             for (int i = 0; i < iwierszy; i++) {
                 for (int j = 0; j < iwierszy; j++) {
-                    tab1[i][j] = tab3[i][j];
+                    tab2[i][j] = tab1[i][j];
+                    tab3[i][j] = tab1[i][j];
+                }
+            }
+            for (int unsigned l = 0; l < potega - 1; l++) {
+                for (int i = 0; i < iwierszy; i++) {
+                    for (int j = 0; j < iwierszy; j++) {
+                        wartosc = 0;
+                        for (int k = 0; k < iwierszy; k++) {
+                            wartosc = wartosc + tab1[i][k] * tab2[k][j];
+                        }
+                        tab3[i][j] = wartosc;
+                    }
                 }
             }
         }
-        deletetab(tab2,iwierszy,iwierszy);
-        deletetab(tab3,iwierszy,iwierszy);
     }
-    }
+    deletetab(tab2, iwierszy, iwierszy);
+    return tab3;
 }
 
 int determinantMatrix(int **tab1,int iwierszy,int ikolumn){
@@ -386,21 +388,25 @@ void deletetab(double ** tab, int iwierszy, int ikolumn){
     delete [] tab;
 }
 
-void addMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
+double **addMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
+    double **tab3=newtabdouble(iwierszy,ikolumn);
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-            tab1[i][j]=tab2[i][j]+tab1[i][j];
+            tab3[i][j]=tab2[i][j]+tab1[i][j];
         }
     }
+    return tab3;
 }
 
 
-void subtractMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
+double **subtractMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn){
+    double **tab3=newtabdouble(iwierszy,ikolumn);
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-            tab1[i][j]=tab1[i][j]-tab2[i][j];
+            tab3[i][j]=tab1[i][j]-tab2[i][j];
         }
     }
+    return tab3;
 }
 
 double **multiplyMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn, int ikolumn2){
@@ -418,12 +424,14 @@ double **multiplyMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolum
     return tab3;
 }
 
-void multiplyByScalar(double ** tab1,int iwierszy,int ikolumn,double skalar){
+double **multiplyByScalar(double ** tab1,int iwierszy,int ikolumn,double skalar){
+    double **tab2=newtabdouble(iwierszy,ikolumn);
     for (int i = 0; i<iwierszy; i++){
         for(int j = 0; j<ikolumn; j++){
-            tab1[i][j]=tab1[i][j]*skalar;
+            tab2[i][j]=tab1[i][j]*skalar;
         }
     }
+    return tab2;
 }
 
 double **transpozeMatrix(double ** tab1,int iwierszy,int ikolumn){
@@ -436,25 +444,29 @@ double **transpozeMatrix(double ** tab1,int iwierszy,int ikolumn){
     return tab2;
 }
 
-void powerMatrix(double ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+double **powerMatrix(double ** tab1,int iwierszy, int ikolumn, int unsigned potega){
+    double **tab2=newtabdouble(iwierszy,iwierszy);
+    double **tab3=newtabdouble(iwierszy,iwierszy);
     if(iwierszy!=ikolumn){
         cout << "potegowac mozna jedynie macierze kwadratowe" << endl;
+        deletetab(tab2,iwierszy,iwierszy);
+        deletetab(tab3,iwierszy,iwierszy);
+        return tab1;
     }else{
         double wartosc;
         if(potega==0){
             for (int i = 0; i<iwierszy; i++){
                 for(int j = 0; j<iwierszy; j++){
                     if(i==j){
-                        tab1[i][j]=1;
+                        tab3[i][j]=1;
                     }
                     else{
-                        tab1[i][j]=0;
+                        tab3[i][j]=0;
                     }
                 }
             }
         }else {
-            double **tab2=newtabdouble(iwierszy,iwierszy);
-            double **tab3=newtabdouble(iwierszy,iwierszy);
+
             for (int i = 0; i<iwierszy; i++){
                 for(int j = 0; j<iwierszy; j++){
                     tab2[i][j]=tab1[i][j];
@@ -471,16 +483,11 @@ void powerMatrix(double ** tab1,int iwierszy, int ikolumn, int unsigned potega){
                         tab3[i][j] = wartosc;
                     }
                 }
-                for (int i = 0; i < iwierszy; i++) {
-                    for (int j = 0; j < iwierszy; j++) {
-                        tab1[i][j] = tab3[i][j];
-                    }
-                }
             }
-            deletetab(tab2,iwierszy,iwierszy);
-            deletetab(tab3,iwierszy,iwierszy);
         }
     }
+    deletetab(tab2,iwierszy,iwierszy);
+    return tab3;
 }
 
 double determinantMatrix(double **tab1,int iwierszy,int ikolumn){

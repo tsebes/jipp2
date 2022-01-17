@@ -59,7 +59,7 @@ void deletetab(int ** tab, int iwierszy, int ikolumn);
  * @param iwierszy ilosc wierszy tablic ktore dodajemy
  * @param ikolumn ilosc kolumn tablic ktore dodajemy
  */
-void addMatrix(int ** tab1, int ** tab2,  int iwierszy, int ikolumn);
+int **addMatrix(int ** tab1, int ** tab2,  int iwierszy, int ikolumn);
 
 /**
 * odejmuje macierz od macierzy, obie macierze sa typu int podane przez uzytkownika
@@ -68,7 +68,7 @@ void addMatrix(int ** tab1, int ** tab2,  int iwierszy, int ikolumn);
 * @param iwierszy ilosc wierszy tablic ktore odejmujemy
 * @param ikolumn ilosc kolumn tablic ktore odejmujemy
 */
-void subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn);
+int **subtractMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn);
 
 /**
  * mnozy dwie macierze przez siebie, obie macierze sa typu int podane przez uzytkownika
@@ -88,7 +88,7 @@ int **multiplyMatrix(int ** tab1, int ** tab2, int iwierszy, int ikolumn, int ik
  * @param ikolumn ilosc kolumn podanej macierzy
  * @param skalar wartosc skalaru przez ktory mnozymy macierz
  */
-void multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar);
+int **multiplyByScalar(int ** tab1,int iwierszy,int ikolumn,int skalar);
 
 /**
  * transpozycja macierzy typu int podanej przez uzytkownika
@@ -106,7 +106,7 @@ int **transpozeMatrix(int ** tab1,int iwierszy,int ikolumn);
  * @param ikolumn ilosc kolumn podanej macierzy
  * @param potega stopien potegi do ktorej bedziemy podnosili macierz, musi byc nieujemna
  */
-void powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
+int **powerMatrix(int ** tab1, int iwierszy, int ikolumn, int unsigned potega);
 
 /**
  * obliczanie wyznacznika macierzy typu int podanej przez uzytkownika
@@ -195,7 +195,7 @@ void deletetab(double ** tab, int iwierszy, int ikolumn);
  * @param iwierszy ilosc wierszy tablic ktore dodajemy
  * @param ikolumn ilosc kolumn tablic ktore dodajemy
  */
-void addMatrix(double ** tab1, double ** tab2,  int iwierszy, int ikolumn);
+double **addMatrix(double ** tab1, double ** tab2,  int iwierszy, int ikolumn);
 
 /**
 * odejmuje macierz od macierzy, obie macierze sa typu double podane przez uzytkownika
@@ -204,7 +204,7 @@ void addMatrix(double ** tab1, double ** tab2,  int iwierszy, int ikolumn);
 * @param iwierszy ilosc wierszy tablic ktore odejmujemy
 * @param ikolumn ilosc kolumn tablic ktore odejmujemy
 */
-void subtractMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn);
+double **subtractMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolumn);
 
 /**
  * mnozy dwie macierze przez siebie, obie macierze sa typu double podane przez uzytkownika
@@ -224,7 +224,7 @@ double **multiplyMatrix(double ** tab1, double ** tab2, int iwierszy, int ikolum
  * @param ikolumn ilosc kolumn podanej macierzy
  * @param skalar wartosc skalaru przez ktory mnozymy macierz
  */
-void multiplyByScalar(double ** tab1,int iwierszy,int ikolumn,double skalar);
+double **multiplyByScalar(double ** tab1,int iwierszy,int ikolumn,double skalar);
 
 /**
  * transpozycja macierzy typu double podanej przez uzytkownika
@@ -242,7 +242,7 @@ double **transpozeMatrix(double ** tab1,int iwierszy,int ikolumn);
  * @param ikolumn ilosc kolumn podanej macierzy
  * @param potega stopien potegi do ktorej bedziemy podnosili macierz, musi byc nieujemna
  */
-void powerMatrix(double ** tab1, int iwierszy, int ikolumn, int unsigned potega);
+double **powerMatrix(double ** tab1, int iwierszy, int ikolumn, int unsigned potega);
 
 /**
  * obliczanie wyznacznika macierzy typu double podanej przez uzytkownika

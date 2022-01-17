@@ -12,7 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
-  "../lab5/CMakeLists.txt"
+  "../matrixApp/CMakeLists.txt"
   "D:/politechnika/CLion 2021.2.2/bin/cmake/win/share/cmake-3.20/Modules/CMakeCInformation.cmake"
   "D:/politechnika/CLion 2021.2.2/bin/cmake/win/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
   "D:/politechnika/CLion 2021.2.2/bin/cmake/win/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
@@ -44,10 +44,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lab5/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "matrixApp/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "lab5/CMakeFiles/lab5.dir/DependInfo.cmake"
+  "matrixApp/CMakeFiles/matrixApp.dir/DependInfo.cmake"
+  "matrixApp/CMakeFiles/matrixLib.dir/DependInfo.cmake"
   )

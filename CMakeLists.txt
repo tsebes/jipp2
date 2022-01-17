@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(lab5)
+project(matrixApp)
 
-add_subdirectory(lab5)
+add_subdirectory(matrixApp)
