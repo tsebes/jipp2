@@ -64,7 +64,7 @@ int main(int argc, char* argv[]){
                 int **wynik = newtab(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                wynik = subtractMatrix(taba,tabb,ikolumn,iwierszy);
+                wynik = subtractMatrix(taba,tabb,iwierszy,ikolumn);
                 showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
@@ -75,7 +75,7 @@ int main(int argc, char* argv[]){
                 double **wynik = newtabdouble(iwierszy,ikolumn);
                 filltab(taba,iwierszy,ikolumn);
                 filltab(tabb,iwierszy,ikolumn);
-                wynik = subtractMatrix(taba,tabb,ikolumn,iwierszy);
+                wynik = subtractMatrix(taba,tabb,iwierszy,ikolumn);
                 showtab(wynik,iwierszy,ikolumn);
                 deletetab(taba,iwierszy,ikolumn);
                 deletetab(tabb,iwierszy,ikolumn);
