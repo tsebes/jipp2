@@ -30,10 +30,25 @@ class SPtr {
     int * ilosc;
 public:
     //konstruktor
+    SPtr(T * data): data(data){
+        ilosc = new int;
+        *ilosc = 1;
+    }
 
     //destruktor
+    ~UPtr(){
+        if(*ilosc < 1) {
+        delete data;
+        delete ilosc;
+        }else{
+            *ilosc--;
+        }
+    }
 
-
+    SPtr(const SPtr&){
+        //przepisanie danych
+        *ilosc++;
+    }
 
 
 }

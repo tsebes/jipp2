@@ -1,6 +1,5 @@
 C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/matrixApp.dir
-C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/matrixLib.dir
-C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/edit_cache.dir
-C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/CMakeFiles/rebuild_cache.dir
+C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/saper/CMakeFiles/edit_cache.dir
+C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/saper/CMakeFiles/saper.dir
+C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/saper/CMakeFiles/rebuild_cache.dir

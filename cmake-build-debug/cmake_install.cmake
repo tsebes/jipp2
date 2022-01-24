@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/lab10")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/saper")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/matrixApp/cmake_install.cmake")
+  include("C:/Users/sebiz/CLionProjects/jipp2/cmake-build-debug/saper/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
